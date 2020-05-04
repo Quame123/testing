@@ -1,0 +1,18 @@
+select count(u_id)
+    from users
+    
+    select count(send_amount_currency)
+    from transfers 
+    where currency = "CFA"
+    
+    select count(send_amount_currency)
+    from transfers
+    where currency <> "CFA"
+    
+    select count (atx_id)
+    from agent_transactions
+    where DATE = 2018
+    
+    select count (transfer_id)
+    from transfers
+    where send_amount_scalar < 0 and receive_amount_scalar > 0  
